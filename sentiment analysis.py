@@ -5,24 +5,29 @@ Created on Sat Jul 24 08:41:19 2021
 @author: linal
 """
 
-import nltk
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
-from nltk import sentiment
-from nltk import word_tokenize
+from google.cloud import language
+from google.cloud.language import enums
+from google.cloud.language import types
+from google.cloud import language_v1
+import six
+import os
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = 'claves.json'
 import pandas as pd
 
 comentarios=pd.read_excel("Comentarios.xlsx")
 comentarios["Calificación"]=0.0
-for i in range(len(comentarios)):  
+for i in range(len(comentarios)):
     text=comentarios["Comentarios"][i]
-        
-    nltk.download('vader_lexicon')
-    nltk.download('punkt')
-    tokenizer = nltk.data.load('tokenizers/punkt/spanish.pickle')
-    
-    analizador = SentimentIntensityAnalyzer()
-    resultados=analizador.polarity_scores(text)
-    comentarios["Calificación"][i]=resultados["compound"]
+
+    client = language_v1.LanguageServiceClient()
+    if isinstance(text, six.binary_type):
+        text = text.decode('utf-8')
+    document = types.Document(
+        content=text,
+        type=enums.Document.Type.PLAIN_TEXT)
+    response = client.analyze_sentiment(document)
+    sentiment = response.document_sentiment
+    comentarios["Calificación"][i]=sentiment.score
 
 
 labels = ['1 estrella','2 estrellas', '3 estrellas', '4 estrellas', '5 estrellas']
@@ -30,7 +35,7 @@ labels = ['1 estrella','2 estrellas', '3 estrellas', '4 estrellas', '5 estrellas
 #create a new column for the age group
 comentarios['Estrellas'] = pd.cut(comentarios["Calificación"], bins=5, labels=labels)
 comentarios['Sentimiento']=""
-for i in range(len(comentarios)): 
+for i in range(len(comentarios)):
     if comentarios["Estrellas"][i]=='5 estrellas' or  comentarios["Estrellas"][i]=='4 estrellas':
         comentarios['Sentimiento'][i]="Positivo"
     elif comentarios["Estrellas"][i]=='3 estrellas':
@@ -38,3 +43,4 @@ for i in range(len(comentarios)):
     else:
         comentarios['Sentimiento'][i]="Negativo"
 comentarios.to_excel("Resultados_comentarios.xlsx",index=False)
+comentarios.to_json('Resultados_comentarios.json',orient="records", force_ascii=False)
