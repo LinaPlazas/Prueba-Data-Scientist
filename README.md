@@ -8,13 +8,13 @@ Estas instrucciones te permitirán obtener una copia del proyecto en funcionamie
 ### Pre-requisitos <img src="/imagenes/requisitos.jpg" width="30" height="30"> 
 
 Instalar: <br>
--bs4 <br>
--selenium <br>
--google-cloud <br>
--fast api <br>
--uvicorn <br>
--jsonschema <br>
--pandas <br>
+- bs4 <br>
+- selenium <br>
+- google-cloud <br>
+- fast api <br>
+- uvicorn <br>
+- jsonschema <br>
+- pandas <br>
 
 ### Instalación <img src="/imagenes/instalacion.jpg" width="30" height="30"> 
 
