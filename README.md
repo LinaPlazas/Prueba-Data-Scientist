@@ -25,6 +25,8 @@ Instalar: <br>
 - pip install uvicorn==0.14.0
 - pip install jsonschema==3.0.1
 
+### Ejecutando pruebas <img src="/imagenes/portatil.png" width="30" height="30"> 
+
 
 
 
