@@ -29,5 +29,15 @@ Instalar: <br>
 
 #### Web scraping
 
+Para obtener los comentarios de la aplicación, ejecute web_scraping.py
+
+- python3 web_scraping.py
+
+Tendra como resultado un archivo excel con los comentarios encontrados en la pagina web
+
+- comentarios.xlsx
+
+
+
 
 
