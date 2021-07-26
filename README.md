@@ -5,4 +5,4 @@ Este repositorio muestra el paso a paso para lanzar una aplicación utilizando h
 ### Comenzando <img src="/imagenes/cohete.jpg" width="30" height="30"> 
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
 
-### Pre-requisitos
+### Pre-requisitos <img src="/imagenes/requisitos.jpg" width="30" height="30"> 
