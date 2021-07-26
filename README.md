@@ -16,6 +16,8 @@ Instalar: <br>
 -jsonschema <br>
 -pandas <br>
 
+### Instalación <img src="/imagenes/instalacion.jpg" width="30" height="30"> 
+
 
 
 
