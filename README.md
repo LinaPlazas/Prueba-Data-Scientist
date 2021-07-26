@@ -43,7 +43,7 @@ Para realizar el análisis de sentimientos de los comentarios en el paso anterio
 
 - python3 sentiment_analysis.py
 
-<p style='text-align: justify;'> En este paso se utiliza la Api de Google Cloud Natural Language la cual arroja un número decimal dependiendo de que tan positivo o negativo fue el comentario analizado. Posteriormente con la libreria pandas.cut se convierte la variable continua (score) en variable categorica (cantidad de estrellas). Se tendra como resultado un archivo json con el comentario, score obtenido, cantidad de estrellas y sentimiento (positivo,negativo o neutro).</p>
+<p style='text-align: justify;'> En este paso se utiliza la Api de Google Cloud Natural Language la cual arroja un número decimal dependiendo de que tan positivo o negativo fue el comentario analizado. Posteriormente con la libreria pandas.cut se convierte la variable continua (score) en variable categórica (cantidad de estrellas). Se tendra como resultado un archivo json con el comentario, score obtenido, cantidad de estrellas y sentimiento (positivo,negativo o neutro).</p>
 
 - Resultados_comentarios.json
 
