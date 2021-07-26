@@ -6,3 +6,16 @@ Este repositorio muestra el paso a paso para lanzar una aplicación utilizando h
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
 
 ### Pre-requisitos <img src="/imagenes/requisitos.jpg" width="30" height="30"> 
+
+Instalar:
+-bs4
+-selenium
+-google-cloud
+-fast api
+-uvicorn
+-jsonschema
+-pandas
+
+
+
+
