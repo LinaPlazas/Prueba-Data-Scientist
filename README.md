@@ -18,6 +18,14 @@ Instalar: <br>
 
 ### Instalación <img src="/imagenes/instalacion.jpg" width="30" height="30"> 
 
+- pip install bs4
+- pip install selenium
+- sudo -H pip install --upgrade google-cloud-language
+- pip install fastapi==0.67.0
+- pip install uvicorn==0.14.0
+- pip install jsonschema==3.0.1
+
+
 
 
 
