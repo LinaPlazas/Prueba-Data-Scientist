@@ -2,4 +2,4 @@
 
 Este repositorio muestra el paso a paso para lanzar una aplicación utilizando heroku, en la cual se exponen los resultados obtenidos luego de realizar análisis de sentimientos sobre los comentarios de los usuarios en una aplicación móvil.
 
-## Comenzando ![Screenshot](cohete.jpg)width="200" height="400
+## Comenzando <img src="https://github.com/LinaPlazas/Prueba-Data-Scientist/tree/main/imagenes/cohete.jpg" width="100" height="100">
