@@ -62,4 +62,11 @@ Oprima Get y luego Try it out, deberá aparecerle lo siguiente:
 
 <img src="/imagenes/api.png"> 
 
+Digite el número de comentarios que desea visualizar y oprima execute. Deberá obtener lo siguiente:
+
+<img src="/imagenes/api2.png"> 
+
+Como puede observar al oprimir execute se muestra la cantidad de comentarios que ha ingresado, asi como su correspondiente calificación, cantidad de estrella y sentimiento encontrado.
+
+
 
