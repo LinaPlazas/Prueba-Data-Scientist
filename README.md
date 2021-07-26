@@ -47,9 +47,19 @@ Para realizar el análisis de sentimientos de los comentarios en el paso anterio
 
 - Resultados_comentarios.json
 
--
 
+#### Creación de App
 
+Para crear la app se utilizó fastAPI, utilice el siguiente comando para correr la aplicación:
 
+- uvicorn main:app --reload
+
+Y escriba en su navegador lo siguiente:
+
+-http://127.0.0.1:8000/docs
+
+Oprima Get y luego Try it out, deberá aparecerle lo siguiente:
+
+<img src="/imagenes/api.png"> 
 
 
