@@ -66,7 +66,12 @@ Digite el número de comentarios que desea visualizar y oprima execute. Deberá 
 
 <img src="/imagenes/api2.png"> 
 
-Como puede observar al oprimir execute se muestra la cantidad de comentarios que ha ingresado, asi como su correspondiente calificación, cantidad de estrella y sentimiento encontrado.
+Como puede observar al oprimir execute se muestra la cantidad de comentarios que ha ingresado, asi como su correspondiente calificación, cantidad de estrellas y sentimiento encontrado.
 
+#### Despliegue de App
+
+Para desplegar la aplicación se utilizó heroku y el link en el que puede encontrar el resultado final es el siguiente:
+
+##### https://prueba-data-scientist.herokuapp.com/docs
 
 
