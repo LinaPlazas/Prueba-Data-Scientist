@@ -37,6 +37,18 @@ Tendra como resultado un archivo excel con los comentarios encontrados en la pag
 
 - comentarios.xlsx
 
+#### Análisis de sentimientos
+
+Para realizar el análisis de sentimientos de los comentarios en el paso anterior ejecute sentiment_analysis.py
+
+- python3 sentiment_analysis.py
+
+En este paso se utiliza la Api de Google Cloud Natural Language la cual arroja un número decimal dependiendo de que tan positivo o negativo fue el comentario analizado, posteriormente con la libreria pandas.cut se convierte la variable continua (score) en variable categorica(cantidad de estrellas). Se tendra como resultado un archivo json con el comentario, score obtenido, cantidad de estrellas y sentimiento(positivo,negativo o neutro).
+
+- Resultados_comentarios.json
+
+-
+
 
 
 
